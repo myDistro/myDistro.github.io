@@ -8,7 +8,7 @@ subtitle : run suspicious programs with a dummyuser
 This module was created following the blog post of [calium](http://calum.org/) 
 [running firefox as another user using sudo](http://calum.org/posts/running-firefox-as-another-user-using-sudo).
 
-To us it, you have us the class
+To use it, you have use the class
 
     class { 'paranoid_browser': }
 
