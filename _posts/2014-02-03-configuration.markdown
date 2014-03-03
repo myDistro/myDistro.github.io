@@ -25,4 +25,3 @@ After you created your github repository like described you can set it up in pup
         source => 'mrVanDalo/configure-vim',
         user   => 'palo',
     }
-
