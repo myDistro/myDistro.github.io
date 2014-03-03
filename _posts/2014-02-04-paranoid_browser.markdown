@@ -17,7 +17,7 @@ After that you can create a configuration in '/etc/sudoers.d' for every user who
     paranoid_browser::user { 'me':    user => 'palo' }
     paranoid_browser::user { 'myMom': user => 'mom' }
 
-Now you can run you firefox via :
+Now you can run your firefox via :
 
     $> sudo -u browser -H firefox 
 
