@@ -4,21 +4,21 @@ title: Build you own Distribution
 subtitle : secure as you like it once and use it as often as you like
 ---
 <div class="home">
-
     <div>
         {% include begining.html %}
     </div>
+ 
+    <ul>
 
     {% for post in site.posts %}
-
-    <h2>
+    <li>
         <a href='{{post.url}}'>
             {{ post.title }}
         </a>
-    </h2>
-    <span class='label label-info'>{{ post.status }}</span>
-    <p>
-    {{ post.subtitle }} </p>
+    {{ post.subtitle }} 
+    </li>
     {% endfor %}
+
+
 </div>
 

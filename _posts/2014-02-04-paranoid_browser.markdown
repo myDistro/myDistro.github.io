@@ -1,12 +1,21 @@
 ---
 layout: post 
-title: paranoid_markdown
+title: paranoid_browser
 status : alpha
-subtitle : that plugin sets up the configuration that lets you start your favorite browser as another user, so the browser can't ready you .ssh and gpg keys.
+subtitle : run suspicious programs with a dummyuser
 ---
 
-for example do
+This module was created following the blog post of [calium](http://calum.org/) 
+[running firefox as another user using sudo](http://calum.org/posts/running-firefox-as-another-user-using-sudo).
+
+To us it, you have us the class
 
     class { 'paranoid_browser': }
+
+After that you can create a configuration in '/etc/sudoers.d' for every user who should be able to use it by.
+
     paranoid_browser::user { 'me':    user => 'palo' }
     paranoid_browser::user { 'myMom': user => 'mom' }
+
+Right now it just puts in a preconfigured config for all the binarys that can be triggered.
+But it will be more configurable soon.
