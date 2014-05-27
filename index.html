@@ -16,5 +16,9 @@ subtitle : secure as you like it once and use it as often as you like
             </li>
         {% endfor %}
      </ul>
+    <div> 
+        {% capture bottom %}{% include bottom.markdown %}{% endcapture %}
+        {{ bottom | markdownify }}
+    </div>
 </div>
 
