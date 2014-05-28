@@ -1,7 +1,7 @@
 ---
 layout: post 
 title: paranoid
-status : alpha
+status : beta
 subtitle : run suspicious programs by a dummyuser
 ---
 
